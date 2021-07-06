@@ -27,8 +27,8 @@ int main()
 
         // Write an action using cout. DON'T FORGET THE "<< endl"
         // To debug: cerr << "Debug messages..." << endl;
-
-
+//
+//
         // A single line providing the move to be made: N NE E SE S SW W or NW
         cout << "SE" << endl;
     }
