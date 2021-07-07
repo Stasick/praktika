@@ -127,102 +127,102 @@ int main() {
 
 
 
-    ///*********** Сортування вибором **************/
-    ///***** 10 *****/
-    //cout << "\nРандомний масив \nРозмiр ==> " << size1 << endl;
-    //for (int i = 0; i < size1; i++)
-    //{
-    //    masiv1[i] = 1 + rand() % 100;
-    //    cout << masiv1[i] << " ";
+    /*********** Сортування вибором **************/
+    /***** 10 *****/
+    cout << "\nРандомний масив \nРозмiр ==> " << size1 << endl;
+    for (int i = 0; i < size1; i++)
+    {
+        masiv1[i] = 1 + rand() % 100;
+        cout << masiv1[i] << " ";
 
-    //}
-    //for (int i = 0; i < size1; i++)
-    //{
-    //    x = i; 
-    //    for (int j = i + 1; j < size1; j++)
-    //        x = (masiv1[j] < masiv1[x]) ? j : x;
-    //    if (i != x)
-    //    {
-    //        tmp = masiv1[i];
-    //        masiv1[i] = masiv1[x];
-    //        masiv1[x] = tmp;
-    //    }
-    //}
-    //cout << "\nВиведення вiдсортованого масиву (вибiр):" << endl;
-    //for (int i = 0; i < size1; i++) {cout << masiv1[i] << " "; }
-    //system("pause");
+    }
+    for (int i = 0; i < size1; i++)
+    {
+        x = i; 
+        for (int j = i + 1; j < size1; j++)
+            x = (masiv1[j] < masiv1[x]) ? j : x;
+        if (i != x)
+        {
+            tmp = masiv1[i];
+            masiv1[i] = masiv1[x];
+            masiv1[x] = tmp;
+        }
+    }
+    cout << "\nВиведення вiдсортованого масиву (вибiр):" << endl;
+    for (int i = 0; i < size1; i++) {cout << masiv1[i] << " "; }
+    system("pause");
 
-    ///***** 100 *****/
-    //cout << "\nРандомний масив \nРозмiр ==> " << size2 << endl;
-    //for (int i = 0; i < size2; i++)
-    //{
-    //    masiv2[i] = 1 + rand() % 100;
-    //    cout << masiv2[i] << " ";
+    /***** 100 *****/
+    cout << "\nРандомний масив \nРозмiр ==> " << size2 << endl;
+    for (int i = 0; i < size2; i++)
+    {
+        masiv2[i] = 1 + rand() % 100;
+        cout << masiv2[i] << " ";
 
-    //}
-    //for (int i = 0; i < size2; i++)
-    //{
-    //    x = i;
-    //    for (int j = i + 1; j < size2; j++)
-    //        x = (masiv2[j] < masiv2[x]) ? j : x;
-    //    if (i != x)
-    //    {
-    //        tmp = masiv2[i];
-    //        masiv2[i] = masiv2[x];
-    //        masiv2[x] = tmp;
-    //    }
-    //}
-    //cout << "\nВиведення вiдсортованого масиву (вибiр):" << endl;
-    //for (int i = 0; i < size2; i++) { cout << masiv2[i] << " "; }
-    //system("pause");
+    }
+    for (int i = 0; i < size2; i++)
+    {
+        x = i;
+        for (int j = i + 1; j < size2; j++)
+            x = (masiv2[j] < masiv2[x]) ? j : x;
+        if (i != x)
+        {
+            tmp = masiv2[i];
+            masiv2[i] = masiv2[x];
+            masiv2[x] = tmp;
+        }
+    }
+    cout << "\nВиведення вiдсортованого масиву (вибiр):" << endl;
+    for (int i = 0; i < size2; i++) { cout << masiv2[i] << " "; }
+    system("pause");
 
-    ///***** 1000 *****/
-    //cout << "\nРандомний масив \nРозмiр ==> " << size3 << endl;
-    //for (int i = 0; i < size3; i++)
-    //{
-    //    masiv3[i] = 1 + rand() % 100;
-    //    cout << masiv3[i] << " ";
+    /***** 1000 *****/
+    cout << "\nРандомний масив \nРозмiр ==> " << size3 << endl;
+    for (int i = 0; i < size3; i++)
+    {
+        masiv3[i] = 1 + rand() % 100;
+        cout << masiv3[i] << " ";
 
-    //}
-    //for (int i = 0; i < size3; i++)
-    //{
-    //    x = i;
-    //    for (int j = i + 1; j < size3; j++)
-    //        x = (masiv3[j] < masiv3[x]) ? j : x;
-    //    if (i != x)
-    //    {
-    //        tmp = masiv3[i];
-    //        masiv3[i] = masiv3[x];
-    //        masiv3[x] = tmp;
-    //    }
-    //}
-    //cout << "\nВиведення вiдсортованого масиву (вибiр):" << endl;
-    //for (int i = 0; i < size3; i++) { cout << masiv3[i] << " "; }
-    //system("pause");
+    }
+    for (int i = 0; i < size3; i++)
+    {
+        x = i;
+        for (int j = i + 1; j < size3; j++)
+            x = (masiv3[j] < masiv3[x]) ? j : x;
+        if (i != x)
+        {
+            tmp = masiv3[i];
+            masiv3[i] = masiv3[x];
+            masiv3[x] = tmp;
+        }
+    }
+    cout << "\nВиведення вiдсортованого масиву (вибiр):" << endl;
+    for (int i = 0; i < size3; i++) { cout << masiv3[i] << " "; }
+    system("pause");
 
-    ///***** 10000 *****/
-    //cout << "\nРандомний масив \nРозмiр ==> " << size4 << endl;
-    //for (int i = 0; i < size4; i++)
-    //{
-    //    masiv4[i] = 1 + rand() % 100;
-    //    cout << masiv4[i] << " ";
+    /***** 10000 *****/
+    cout << "\nРандомний масив \nРозмiр ==> " << size4 << endl;
+    for (int i = 0; i < size4; i++)
+    {
+        masiv4[i] = 1 + rand() % 100;
+        cout << masiv4[i] << " ";
 
-    //}
-    //for (int i = 0; i < size4; i++)
-    //{
-    //    x = i;
-    //    for (int j = i + 1; j < size4; j++)
-    //        x = (masiv4[j] < masiv4[x]) ? j : x;
-    //    if (i != x)
-    //    {
-    //        tmp = masiv4[i];
-    //        masiv4[i] = masiv4[x];
-    //        masiv4[x] = tmp;
-    //    }
-    //}
-    //cout << "\nВиведення вiдсортованого масиву (вибiр):" << endl;
-    //for (int i = 0; i < size4; i++) { cout << masiv4[i] << " "; }
-    //system("pause");
+    }
+    for (int i = 0; i < size4; i++)
+    {
+        x = i;
+        for (int j = i + 1; j < size4; j++)
+            x = (masiv4[j] < masiv4[x]) ? j : x;
+        if (i != x)
+        {
+            tmp = masiv4[i];
+            masiv4[i] = masiv4[x];
+            masiv4[x] = tmp;
+        }
+    }
+    cout << "\nВиведення вiдсортованого масиву (вибiр):" << endl;
+    for (int i = 0; i < size4; i++) { cout << masiv4[i] << " "; }
+    system("pause");
 
     /***** 100000 *****/
     cout << "\nРандомний масив \nРозмiр ==> " << size5 << endl;
