@@ -224,54 +224,54 @@ int main() {
     //for (int i = 0; i < size4; i++) { cout << masiv4[i] << " "; }
     //system("pause");
 
-    ///***** 100000 *****/
-    //cout << "\nРандомний масив \nРозмiр ==> " << size5 << endl;
-    //for (int i = 0; i < size5; i++)
-    //{
-    //    masiv5[i] = 1 + rand() % 100;
-    //    cout << masiv5[i] << " ";
-
-    //}
-    //for (int i = 0; i < size5; i++)
-    //{
-    //    x = i;
-    //    for (int j = i + 1; j < size5; j++)
-    //        x = (masiv5[j] < masiv5[x]) ? j : x;
-    //    if (i != x)
-    //    {
-    //        tmp = masiv5[i];
-    //        masiv5[i] = masiv5[x];
-    //        masiv5[x] = tmp;
-    //    }
-    //}
-    //cout << "\nВиведення вiдсортованого масиву (вибiр):" << endl;
-    //for (int i = 0; i < size5; i++) { cout << masiv5[i] << " "; }
-    //system("pause");
-
-    /***** 1000000 *****/
-    cout << "\nРандомний масив \nРозмiр ==> " << size6 << endl;
-    for (int i = 0; i < size6; i++)
+    /***** 100000 *****/
+    cout << "\nРандомний масив \nРозмiр ==> " << size5 << endl;
+    for (int i = 0; i < size5; i++)
     {
-        masiv6[i] = 1 + rand() % 100;
-        cout << masiv6[i] << " ";
+        masiv5[i] = 1 + rand() % 100;
+        cout << masiv5[i] << " ";
 
     }
-    for (int i = 0; i < size6; i++)
+    for (int i = 0; i < size5; i++)
     {
         x = i;
-        for (int j = i + 1; j < size6; j++)
-            x = (masiv6[j] < masiv6[x]) ? j : x;
+        for (int j = i + 1; j < size5; j++)
+            x = (masiv5[j] < masiv5[x]) ? j : x;
         if (i != x)
         {
-            tmp = masiv6[i];
-            masiv6[i] = masiv6[x];
-            masiv6[x] = tmp;
+            tmp = masiv5[i];
+            masiv5[i] = masiv5[x];
+            masiv5[x] = tmp;
         }
     }
     cout << "\nВиведення вiдсортованого масиву (вибiр):" << endl;
-    for (int i = 0; i < size6; i++) { cout << masiv6[i] << " "; }
+    for (int i = 0; i < size5; i++) { cout << masiv5[i] << " "; }
     system("pause");
-    /**********************************************/
+
+    ///***** 1000000 *****/
+    //cout << "\nРандомний масив \nРозмiр ==> " << size6 << endl;
+    //for (int i = 0; i < size6; i++)
+    //{
+    //    masiv6[i] = 1 + rand() % 100;
+    //    cout << masiv6[i] << " ";
+
+    //}
+    //for (int i = 0; i < size6; i++)
+    //{
+    //    x = i;
+    //    for (int j = i + 1; j < size6; j++)
+    //        x = (masiv6[j] < masiv6[x]) ? j : x;
+    //    if (i != x)
+    //    {
+    //        tmp = masiv6[i];
+    //        masiv6[i] = masiv6[x];
+    //        masiv6[x] = tmp;
+    //    }
+    //}
+    //cout << "\nВиведення вiдсортованого масиву (вибiр):" << endl;
+    //for (int i = 0; i < size6; i++) { cout << masiv6[i] << " "; }
+    //system("pause");
+    ///**********************************************/
 
         
 

@@ -1,0 +1,8 @@
+﻿  Project1.cpp
+C:\Users\User\Praktika\Project1\Project1\Project1.cpp(23,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\User\Praktika\Project1\Project1\Project1.cpp(16,9): warning C4101: masiv3: неиспользованная локальная переменная
+C:\Users\User\Praktika\Project1\Project1\Project1.cpp(14,9): warning C4101: masiv1: неиспользованная локальная переменная
+C:\Users\User\Praktika\Project1\Project1\Project1.cpp(18,9): warning C4101: masiv5: неиспользованная локальная переменная
+C:\Users\User\Praktika\Project1\Project1\Project1.cpp(15,9): warning C4101: masiv2: неиспользованная локальная переменная
+C:\Users\User\Praktika\Project1\Project1\Project1.cpp(17,9): warning C4101: masiv4: неиспользованная локальная переменная
+  Project1.vcxproj -> C:\Users\User\Praktika\Project1\Debug\Project1.exe
