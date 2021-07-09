@@ -1,77 +1,112 @@
 ﻿#include <iostream>
+#include <random>
 #include <time.h>
 using namespace std;
 
 int main() {
     setlocale(LC_ALL, "russian");
-    const int size1 = 10;
-    const int size2 = 100;
-    const int size3 = 1000;
-    const int size4 = 10000;
-    const int size5 = 100000;
+    //const int size1 = 10;
+    //const int size2 = 100;
+    //const int size3 = 1000;
+    //const int size4 = 10000;
+    //const int size5 = 100000;
     //const int size6 = 1000000;
 
-    int masiv1[size1];
-    int masiv2[size2];
-    int masiv3[size3];
-    int masiv4[size4];
-    int masiv5[size5];
+    //int masiv1[size1];
+    //int masiv2[size2];
+    //int masiv3[size3];
+    //int masiv4[size4];
+    //int masiv5[size5];
     //int masiv6[size6];
-
-    int tmp = 0;
+    //int tmp = 0;
     int x = 0;
-    int b = 0;
+
     srand(time(NULL));
+    random_device rd;
 
 
-    /*********** Сортування бульбашкою **************/
-    /***** 10 *****/
-    cout << "\nРандомний масив \nРозмiр ==> " << size1 << endl;
-    for (int i = 0; i < size1; i++) 
-    {
-        masiv1[i] = 1 + rand() % 100;
-        cout << masiv1[i] << " ";
 
+    int N = 100;
+    int* arr = new int[N];
+
+
+    for (int i = 0; i < N; i++) {
+        int rand = rd() % 100 + 1;       
+        arr[i] = rand;
     }
-    for (int i = size1 - 1; i >= x; i) 
-    {
-        for (int j = size1 - 1; j >= x; j--) 
-        {
-            if (masiv1[j] < masiv1[j - 1]) {
-                tmp = masiv1[j];
-                masiv1[j] = masiv1[j - 1];
-                masiv1[j - 1] = tmp;
-            }
-        }
-        x++;
-    }
-    cout << "\nВиведення вiдсортованого масиву (бульбашка):" << endl;
-    for (int i = 0; i < size1; i++) { cout << masiv1[i] << " "; }
-    system("pause");
 
-    /***** 100 *****/
-    cout << "\nРандомний масив \nРозмiр ==> " << size2 << endl;
-    for (int i = 0; i < size2; i++)
-    {
-        masiv2[i] = 1 + rand() % 100;
-        cout << masiv2[i] << " ";
 
-    }
-    for (int i = size2 - 1; i >= b; i)
-    {
-        for (int j = size2 - 1; j >= b; j--)
-        {
-            if (masiv2[j] < masiv2[j - 1]) {
-                tmp = masiv2[j];
-                masiv2[j] = masiv2[j - 1];
-                masiv2[j - 1] = tmp;
-            }
-        }
-        b++;
-    }
-    cout << "\nВиведення вiдсортованого масиву (бульбашка):" << endl;
-    for (int i = 0; i < size2; i++) { cout <<  masiv2[i] << " "; }
-    system("pause");
+
+    cout << arr[i] << endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ///*********** Сортування бульбашкою **************/
+    ///***** 10 *****/
+    //cout << "\nРандомний масив \nРозмiр ==> " << size1 << endl;
+    //for (int i = 0; i < size1; i++)
+    //{
+    //    masiv1[i] = 1 + rand() % 100;
+    //    cout << masiv1[i] << " ";
+    //}
+    //for (int i = size1 - 1; i >= x; i)
+    //{
+    //    for (int j = size1 - 1; j >= x; j--)
+    //    {
+    //        if (masiv1[j] < masiv1[j - 1]) {
+    //            tmp = masiv1[j];
+    //            masiv1[j] = masiv1[j - 1];
+    //            masiv1[j - 1] = tmp;
+    //        }
+    //    }
+    //    x++;
+    //}
+    //cout << "\nВиведення вiдсортованого масиву (бульбашка):" << endl;
+    //for (int i = 0; i < size1; i++) { cout << masiv1[i] << " "; }
+    //system("pause");
+
+    ///***** 100 *****/
+    //cout << "\nРандомний масив \nРозмiр ==> " << size2 << endl;
+    //for (int i = 0; i < size2; i++)
+    //{
+    //    masiv2[i] = 1 + rand() % 100;
+    //    cout << masiv2[i] << " ";
+    //}
+    //for (int i = size2 - 1; i >= x; i)
+    //{
+    //    for (int j = size2 - 1; j >= x; j--)
+    //    {
+    //        if (masiv2[j] < masiv2[j - 1]) {
+    //            tmp = masiv2[j];
+    //            masiv2[j] = masiv2[j - 1];
+    //            masiv2[j - 1] = tmp;
+    //        }
+    //    }
+    //    x++;
+    //}
+    //cout << "\nВиведення вiдсортованого масиву (бульбашка):" << endl;
+    //for (int i = 0; i < size2; i++) { cout << masiv2[i] << " "; }
+    //system("pause");
 
     ///***** 1000 *****/
     //cout << "\nРандомний масив \nРозмiр ==> " << size3 << endl;
@@ -94,7 +129,7 @@ int main() {
     //    x++;
     //}
     //cout << "\nВиведення вiдсортованого масиву (бульбашка):" << endl;
-    //for (int i = 0; i < size3; i++) { cout <<  masiv3[i] << " "; }
+    //for (int i = 0; i < size3; i++) { cout << masiv3[i] << " "; }
     //system("pause");
 
     ///***** 10000 *****/
@@ -105,9 +140,9 @@ int main() {
     //    cout << masiv4[i] << " ";
 
     //}
-    //for (int i = size4 - 1; i >= x; i)
+    //for (int i = size4 - 1; i >= d; i)
     //{
-    //    for (int j = size4 - 1; j >= x; j--)
+    //    for (int j = size4 - 1; j >= d; j--)
     //    {
     //        if (masiv4[j] < masiv4[j - 1]) {
     //            tmp = masiv4[j];
@@ -115,10 +150,10 @@ int main() {
     //            masiv4[j - 1] = tmp;
     //        }
     //    }
-    //    x++;
+    //    d++;
     //}
     //cout << "\nВиведення вiдсортованого масиву (бульбашка):" << endl;
-    //for (int i = 0; i < size4; i++) {cout << masiv4[i] << " ";}
+    //for (int i = 0; i < size4; i++) { cout << masiv4[i] << " "; }
     //system("pause");
 
 
@@ -127,8 +162,8 @@ int main() {
 
 
 
-    /////*********** Сортування вибором **************/
-    /////***** 10 *****/
+    ///*********** Сортування вибором **************/
+    ///***** 10 *****/
     //cout << "\nРандомний масив \nРозмiр ==> " << size1 << endl;
     //for (int i = 0; i < size1; i++)
     //{
@@ -138,7 +173,7 @@ int main() {
     //}
     //for (int i = 0; i < size1; i++)
     //{
-    //    x = i; 
+    //    x = i;
     //    for (int j = i + 1; j < size1; j++)
     //        x = (masiv1[j] < masiv1[x]) ? j : x;
     //    if (i != x)
@@ -149,7 +184,7 @@ int main() {
     //    }
     //}
     //cout << "\nВиведення вiдсортованого масиву (вибiр):" << endl;
-    //for (int i = 0; i < size1; i++) {cout << masiv1[i] << " "; }
+    //for (int i = 0; i < size1; i++) { cout << masiv1[i] << " "; }
     //system("pause");
 
     ///***** 100 *****/
@@ -273,12 +308,13 @@ int main() {
     //system("pause");
     ///**********************************************/
 
-        
+
 
 
     system("pause");
     return 0;
 }
+
 
 
 
