@@ -1,0 +1,17 @@
+$Recycle.Bin
+$WinREAgent
+AMD
+audio.log
+Documents and Settings
+DumpStack.log.tmp
+hiberfil.sys
+pagefile.sys
+PerfLogs
+Program Files
+Program Files (x86)
+ProgramData
+Recovery
+swapfile.sys
+System Volume Information
+Users
+Windows
