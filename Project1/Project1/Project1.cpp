@@ -1,6 +1,9 @@
 ﻿#include <iostream>
 #include <random>
 #include <time.h>
+#include <chrono>
+#include <ctime>  
+using namespace std::chrono;
 using namespace std;
 
 void swap(int* xp, int* yp)
@@ -12,6 +15,7 @@ void swap(int* xp, int* yp)
 
 void Bubble(int* arr, int l)
 {
+    auto start = high_resolution_clock::now();
     for (int i = 0; i < l - 1; i++) 
     {
         for (int j = 0; j < l - i - 1; j++) {
@@ -20,10 +24,14 @@ void Bubble(int* arr, int l)
             }
         }
     }
+    auto stop = high_resolution_clock::now();
+    auto duration = duration_cast<microseconds>(stop - start);
+    cout << "\n\nComplited bubble!!!\n" << "\tSize: " << l << " | \tResult time: " << duration.count() << endl;
 }
 
 void Choice(int* arr, int l) {
     int  k, x;
+    auto start = high_resolution_clock::now();
     for (int i = 0; i < l - 1; i++)
     {
         k = i; 
@@ -40,9 +48,13 @@ void Choice(int* arr, int l) {
         arr[k] = arr[i];
         arr[i] = x;
     }
+    auto stop = high_resolution_clock::now();
+    auto duration = duration_cast<microseconds>(stop - start);
+    cout << "Complited choise!!!\n" << "\tSize: " << l << " | \tResult time: " << duration.count() << endl;
 }
 void Insert(int* arr, int l)
 {
+    auto start = high_resolution_clock::now();
     for (int i = 1; i < l; i++)
     {
         for (int j = i; j > 0 && arr[j - 1] > arr[j]; j--)
@@ -50,12 +62,15 @@ void Insert(int* arr, int l)
             swap(arr[j - 1], arr[j]);
         }
     }
+    auto stop = high_resolution_clock::now();
+    auto duration = duration_cast<microseconds>(stop - start);
+    cout << "Complited insert!!!\n" << "\tSize: " << l << " | \tResult time: " << duration.count() << endl;
 }
 
 int main() {
     setlocale(LC_ALL, "russian");
     random_device rd;
-    const int NumZero = 6;
+    const int NumZero = 4;
     int N = 10;
     while (N <= pow(10, NumZero))
     {
@@ -74,17 +89,17 @@ int main() {
         Insert(ins, N);
         Choice(choi, N);
 
-        cout << "\n\n===========================Bubble sorted array===========================\n" << endl;
+        cout << "\n===========================Bubble sorted array===========================" << endl;
         for (size_t i = 0; i < N; i++)
         {
             cout << bubl[i] << " ";
         }
-        cout << "\n\n===========================Choise sorted array===========================\n" << endl;
+        cout << "\n===========================Choise sorted array===========================" << endl;
         for (size_t i = 0; i < N; i++)
         {
             cout << bubl[i] << " ";
         }
-        cout << "\n\n===========================Insert sorted array===========================\n" << endl;
+        cout << "\n===========================Insert sorted array===========================" << endl;
         for (size_t i = 0; i < N; i++)
         {
             cout << bubl[i] << " ";
